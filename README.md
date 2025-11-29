@@ -3,18 +3,18 @@
 > Self-learning Algorithm Implementation - Includes High-Precision Computation, Dynamic Programming and Advanced Sorting Algorithms
 
 ## Project Structure
-Algorithm-Mastery/
-├── high-precision/ # High-Precision Arithmetic
-│ ├── addition.cpp # Large number addition
-│ ├── subtraction.cpp # Large number subtraction
-│ └── multiplication.cpp # Large number multiplication
-├── sorting-algorithms/ # Advanced Sorting Algorithms
-│ ├── quick_sort.cpp # Quick sort implementation
-│ ├── counting_sort.cpp # Counting sort implementation
-│ └── merge_sort.cpp # Merge sort implementation
-└── dynamic-programming/ # Dynamic Programming
-├── LCS.cpp # Longest Common Subsequence
-└── LIS.cpp # Longest Increasing Subsequence
+    Algorithm-Mastery/
+    ├── high-precision/ # High-Precision Arithmetic
+    │ ├── addition.cpp # Large number addition
+    │ ├── subtraction.cpp # Large number subtraction
+    │ └── multiplication.cpp # Large number multiplication
+    ├── sorting-algorithms/ # Advanced Sorting Algorithms
+    │ ├── quick_sort.cpp # Quick sort implementation
+    │ ├── counting_sort.cpp # Counting sort implementation
+    │ └── merge_sort.cpp # Merge sort implementation
+    └── dynamic-programming/ # Dynamic Programming
+    ├── LCS.cpp # Longest Common Subsequence
+    └── LIS.cpp # Longest Increasing Subsequence
 ## Implemented Algorithms
 
 ### High-Precision Computation
