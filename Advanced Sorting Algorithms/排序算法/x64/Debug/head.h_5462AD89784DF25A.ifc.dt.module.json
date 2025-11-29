@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\head.obj",
+            "outputs": [
+                "x64\\Debug\\head.h_5462AD89784DF25A.ifc.dt.module.json",
+                "x64\\Debug\\head.h_5462AD89784DF25A.ifc.dt.d.json",
+                "x64\\Debug\\head.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "E:\\source\\repos\\排序算法\\排序算法\\head.h",
+                    "source-path": "e:\\source\\repos\\排序算法\\排序算法\\head.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
