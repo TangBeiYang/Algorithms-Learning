@@ -1,20 +1,17 @@
 #include<stdio.h>
-//Ñ¡»ù×¼£º´ÓÊý×éÖÐÈÎÑ¡Ò»ÔªËØ×÷Îª»ù×¼Öµ£¨pivot£©
-// ·ÖÇø£º½«Êý×é·ÖÎªÁ½²¿·Ö¡ª¡ªÐ¡ÓÚ»ù×¼µÄ×ó×ÓÊý×é + ´óÓÚ»ù×¼µÄÓÒ×ÓÊý×é
-// µÝ¹é£º¶Ô×óÓÒ×ÓÊý×éÖØ¸´ÉÏÊö¹ý³Ì£¬Ö±ÖÁ×ÓÊý×é³¤¶ÈÎª1£¨ÌìÈ»ÓÐÐò£©¡£
+//é€‰åŸºå‡†ï¼šä»Žæ•°ç»„ä¸­ä»»é€‰ä¸€å…ƒç´ ä½œä¸ºåŸºå‡†å€¼ï¼ˆpivotï¼‰
+// åˆ†åŒºï¼šå°†æ•°ç»„åˆ†ä¸ºä¸¤éƒ¨åˆ†â€”â€”å°äºŽåŸºå‡†çš„å·¦å­æ•°ç»„ + å¤§äºŽåŸºå‡†çš„å³å­æ•°ç»„
+// é€’å½’ï¼šå¯¹å·¦å³å­æ•°ç»„é‡å¤ä¸Šè¿°è¿‡ç¨‹ï¼Œç›´è‡³å­æ•°ç»„é•¿åº¦ä¸º1ï¼ˆå¤©ç„¶æœ‰åºï¼‰ã€‚
 void swap(int* a, int* b){
 	int temp=*a;
     *a=*b;
     *b=temp;
 }
-int yfy(int a[], int low, int high)
-{
+int yfy(int a[], int low, int high){
     int temp = a[high];
     int i = low - 1;
-    for (int j = low; j < high; j++)
-    {
-        if (a[j] <= temp)
-        {
+    for (int j = low; j < high; j++){
+        if (a[j] <= temp){
             i++;
             swap(&a[i], &a[j]);
         }
@@ -22,8 +19,7 @@ int yfy(int a[], int low, int high)
     swap(&a[i + 1], &a[high]);
     return i + 1;
 }
-void quick(int a[], int low, int high)
-{
+void quick(int a[], int low, int high){
     if (low < high) {
         int pi = yfy(a, low, high); 
         quick(a, low, pi - 1);        
