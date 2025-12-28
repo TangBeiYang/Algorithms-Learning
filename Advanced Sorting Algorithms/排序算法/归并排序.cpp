@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
-// 先写一个把两个有序子数组合成一个更大的有序数组，再递归
+// 鍏堝啓涓�涓妸涓や釜鏈夊簭瀛愭暟缁勫悎鎴愪竴涓洿澶х殑鏈夊簭鏁扮粍锛屽啀閫掑綊
 void merge(int a[], int left, int mid, int right)
 {
-	// 左子数组是[left..mid]，右子数组是[mid+1..right]
+	// 宸﹀瓙鏁扮粍鏄痆left..mid]锛屽彸瀛愭暟缁勬槸[mid+1..right]
 	int n1 = mid - left + 1;
 	int n2 = right - mid;
 	int* L = (int*)calloc(n1, sizeof(int));
@@ -24,9 +24,10 @@ void gui(int a[], int left, int right)
 {
 	if (left < right)
 	{
-		int mid = left + (right - left) / 2;
+		int mid = left + (right - left) / 2;  //闃叉right+left瓒呰寖鍥寸殑鍐欐硶锛屾洿瀹夊叏
 		gui(a, left, mid);
 		gui(a, mid+1, right);
 		merge(a, left, mid, right);
 	}
 }
+
