@@ -15,15 +15,16 @@ int main()
 		a[i] = s1[la - i - 1] - '0';
 	for (i = 0; i < lb; i++)
 		b[i] = s2[lb - i - 1] - '0';                //转置方便计算
-	for (i = 0; i < la; i++)
-		for (j = 0; j < lb; j++)
+	for (i = 1; i <= la; i++)
+		for (j = 1; j <= lb; j++)
 		{
-			c[i + j - 1] += a[i] * b[j];
+			c[i + j - 1] += a[i-1] * b[j-1];
 			c[i + j] += c[i + j - 1] / 10;
 			c[i + j - 1] %= 10;                     //核心算法，利用循环嵌套确保不遗漏
 		}
 	while (c[lc] == 0 && lc > 0) lc--;              //去除前面所有0
-	for (i = lc; i >= 0; i--)
+	for (i = lc; i > 0; i--)
 		printf("%d", c[i]);
     return 0;
+
 }
